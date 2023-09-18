@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 20px 0;
+  direction: rtl;
+}
+.header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .row .content .parent ul {
+  direction: rtl;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .row .content .parent ul li {
+  list-style-type: none;
+}
+.header .row .content .parent ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+.header .row .content .parent ul li a span {
+  background-color: red;
+  margin-left: 10px;
+  padding: 4px 8px;
+  color: white;
+}
+.header .row .content .parent ul li a:hover {
+  color: red;
+}
+.header .row .content .parent ul li.menu {
+  position: relative;
+}
+.header .row .content .parent ul li.menu .dropdown {
+  top: 25px;
+  width: 230px;
+  background-color: white;
+  position: absolute;
+  display: none;
+}
+.header .row .content .parent ul li.menu .dropdown a {
+  display: block;
+  padding: 10px 5px;
+}
+.header .row .content .parent ul li.menu:hover .dropdown {
+  display: block;
+}
+.header .logo {
+  display: flex;
+  justify-content: start;
+}
+.header .logo img {
+  padding-right: 20px;
+}
+.header .check {
+  display: none;
+  cursor: pointer;
+  background-color: #b72128;
+  color: white;
+  padding: 0 30px;
+}
+
+.section-one {
+  height: 85vh;
+  background-image: url("../images/d0c63aceb953b0b1ad63ccd03a6c62ad.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 0;
+  color: white;
+}
+.section-one .back-ground {
+  background-color: rgba(0, 0, 0, 0.475);
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.section-one .back-ground .content-one {
+  margin-top: 200px;
+  padding: 0 300px;
+}
+.section-one .back-ground .content-one h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.section-one .back-ground .content-two {
+  margin-top: 30px;
+}
+.section-one .back-ground .content-two .parent {
+  background-color: white;
+  padding: 20px 5px;
+  color: black;
+  box-shadow: 5px 5px 20px #1c1a1a;
+}
+.section-one .back-ground .content-two .parent h5 {
+  margin: 10px 0;
+}
+.section-one .back-ground .content-two .parent p {
+  margin-bottom: 10px 0;
+}
+.section-one .back-ground .content-two .parent a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: red;
+  padding: 10px 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+.section-two {
+  margin-top: 100px;
+}
+.section-two .col-one {
+  direction: rtl;
+  padding: 0;
+  margin: 20px 0;
+}
+.section-two .col-one h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.section-two .col-one p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.section-two .col-one input.email {
+  padding: 5px;
+}
+.section-two .col-one input.submit {
+  background-color: red;
+  color: white;
+  padding: 6px 10px;
+  border: 0;
+}
+.section-two .col-one .book-background {
+  background-image: url("../images/faq-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+.section-two .col-two {
+  direction: rtl;
+  margin: 20px 0;
+}
+.section-two .col-two h4 {
+  color: red;
+}
+.section-two .col-two ul li {
+  list-style-type: none;
+  display: flex;
+  margin: 10px 0;
+}
+.section-two .col-two ul li a {
+  text-decoration: none;
+  color: #464f59;
+}
+.section-two .col-two ul li .text-center {
+  width: 70px;
+  height: 70px;
+  color: white;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: #595958;
+}
+.section-two .col-two ul li .text-center p {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+.section-two .col-two .btn {
+  width: 170px;
+  height: 45px;
+  display: block;
+  background: #b72128;
+  font-size: 0.9em;
+  margin: 0 auto !important;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0px 1px 1px 0px #000;
+}
+
+.footer {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #2f2f2f;
+  direction: rtl;
+}
+.footer span {
+  position: absolute;
+  right: 5%;
+  color: white;
+  bottom: 20px;
+  background-color: red;
+  padding: 15px 19px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer .title h3 {
+  color: white;
+  font-size: 1.2em;
+  padding: 70px 0 30px;
+}
+.footer .links {
+  display: flex;
+}
+.footer .links ul {
+  margin: 0 20px;
+}
+.footer .links ul li {
+  font-size: 0.85em;
+  list-style-type: square;
+  color: #595958;
+  line-height: 30px;
+}
+.footer .links ul li a {
+  color: #bdc1c7;
+  text-decoration: none;
+}
+.footer .contacts {
+  color: white;
+}
+.footer .contacts .parent {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+.footer .contacts .parent .one p {
+  color: white;
+}
+.footer .contacts .parent .one .icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .contacts .parent .one .icons > div {
+  width: 82px;
+  height: 27px;
+  text-align: center;
+  border-radius: 30px;
+  color: #fff;
+  margin: 4px;
+  float: right;
+  line-height: 25px;
+  font-size: 1.2em;
+}
+.footer .contacts .parent .one .icons > div.one {
+  background-color: #31ab62;
+}
+.footer .contacts .parent .one .icons > div.two {
+  background-color: #3171a2;
+}
+.footer .contacts .parent .two p {
+  color: white;
+}
+.footer .contacts .parent .two .icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .contacts .parent .two .icons > div {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  background-color: #3171a2;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+.footer .contacts .parent .two .icons > div a {
+  color: white;
+}
+.footer .contacts .phones .parent {
+  display: block;
+  padding: 5px;
+  font-size: 0.9em;
+  background-color: #393939;
+}
+.footer .contacts .phones .parent p {
+  padding: 5px 0;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .header .row {
+    display: block;
+  }
+  .header .row .content .parent ul {
+    width: 100%;
+    height: auto;
+    right: -100%;
+    position: fixed;
+    padding: 20px 0;
+    transition: all 0.5s;
+    background-color: white;
+    display: block;
+    padding-right: 20px;
+  }
+  .header .row .content .parent ul li {
+    padding: 5px 0;
+  }
+  .header .row .content .parent ul li.menu .dropdown {
+    right: 60px;
+  }
+  .header .row .check {
+    display: block;
+    padding-left: 20px;
+  }
+  .section-one .back-ground .content-one {
+    padding: 0 20px;
+  }
+  .section-one .back-ground .content-one .icons {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .footer .contacts .parent {
+    display: block;
+  }
+  .footer .contacts .parent .one .icons {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer .contacts .parent .two {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
