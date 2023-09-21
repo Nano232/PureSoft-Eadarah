@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
+html {
   overflow-x: hidden;
 }
 .header {
@@ -209,11 +209,12 @@ body {
   position: relative;
   span {
     position: absolute;
-    right: 5%;
+    right: 45%;
     color: white;
-    bottom: 20px;
+    /* bottom: 20px; */
     background-color: red;
     padding: 15px 19px;
+    top: -30px;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -228,7 +229,7 @@ body {
     padding: 70px 0 30px;
   }
   .links {
-    display: flex;
+    // display: flex;
     ul {
       margin: 0 20px;
       li {
@@ -314,7 +315,52 @@ body {
     }
   }
 }
+// =======
+.mySlides1,
+.mySlides2 {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+// =======
 @media (max-width: 1000px) {
   .header {
     .row {
@@ -358,6 +404,10 @@ body {
       }
     }
   }
+
+  .section-two {
+    margin-top: 300px;
+  }
 }
 @media (max-width: 600px) {
   .footer .contacts .parent {
@@ -369,5 +419,11 @@ body {
     .two {
       margin-top: 20px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-two {
+    margin-top: 900px;
   }
 }
