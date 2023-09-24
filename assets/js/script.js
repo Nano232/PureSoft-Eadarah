@@ -15,26 +15,29 @@ toTop.onclick = function () {
   });
 };
 // ------------
-let slideIndex = [1, 1];
-let slideId = ["mySlides1", "mySlides2"];
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-  showSlides((slideIndex[no] += n), no);
-}
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {
-    slideIndex[no] = 1;
-  }
-  if (n < 1) {
-    slideIndex[no] = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex[no] - 1].style.display = "block";
-}
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    "@0.75": {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    "@1.00": {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    "@1.50": {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
+});

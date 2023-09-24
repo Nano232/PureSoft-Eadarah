@@ -99,9 +99,9 @@ html {
     }
     .content-two {
       margin-top: 30px;
-
       .parent {
         background-color: white;
+        border: 1px solid #595958;
         padding: 20px 5px;
         color: black;
         box-shadow: 5px 5px 20px #1c1a1a;
@@ -125,7 +125,7 @@ html {
 }
 
 .section-two {
-  margin-top: 100px;
+  margin-top: 50px;
   .col-one {
     direction: rtl;
     padding: 0;
@@ -202,6 +202,32 @@ html {
       border-radius: 2px;
       box-shadow: 0px 1px 1px 0px #000;
     }
+  }
+}
+
+.section-three {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    border: 1px solid #d5d5d5;
+    object-fit: cover;
   }
 }
 
@@ -315,52 +341,6 @@ html {
     }
   }
 }
-// =======
-.mySlides1,
-.mySlides2 {
-  display: none;
-}
-img {
-  vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a grey background color */
-.prev:hover,
-.next:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
-// =======
 @media (max-width: 1000px) {
   .header {
     .row {
@@ -404,26 +384,31 @@ img {
       }
     }
   }
-
+}
+@media (max-width: 1025px) {
   .section-two {
-    margin-top: 300px;
+    margin-top: 200px;
   }
 }
 @media (max-width: 600px) {
+  .section-two {
+    margin-top: 150px;
+  }
   .footer .contacts .parent {
     display: block;
     .one .icons {
       display: flex;
       justify-content: flex-start;
     }
-    .two {
-      margin-top: 20px;
-    }
   }
 }
-
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   .section-two {
-    margin-top: 900px;
+    margin-top: 200px;
+  }
+}
+@media (max-width: 300px) {
+  .section-two {
+    margin-top: 250px;
   }
 }
