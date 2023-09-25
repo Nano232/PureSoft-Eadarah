@@ -384,15 +384,30 @@ html {
       }
     }
   }
+
+  .section-two {
+    .container {
+      .row {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
 }
 @media (max-width: 1025px) {
   .section-two {
-    margin-top: 200px;
+    // margin-top: 200px;
+    .container {
+      .row {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+      }
+    }
   }
 }
 @media (max-width: 600px) {
   .section-two {
-    margin-top: 150px;
+    // margin-top: 150px;
   }
   .footer .contacts .parent {
     display: block;
