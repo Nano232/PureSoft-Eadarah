@@ -141,6 +141,7 @@ html {
 }
 .section-two .col-one input.email {
   padding: 5px;
+  width: 70%;
 }
 .section-two .col-one input.submit {
   background-color: red;
@@ -362,8 +363,11 @@ html {
 }
 @media (max-width: 1025px) {
   .section-two .container .row {
-    display: flex !important;
-    flex-direction: column-reverse !important;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section-two .container input.email {
+    width: 90%;
   }
 }
 @media (max-width: 600px) {

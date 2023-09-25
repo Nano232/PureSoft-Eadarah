@@ -141,6 +141,7 @@ html {
     }
     input.email {
       padding: 5px;
+      width: 70%;
     }
     input.submit {
       background-color: red;
@@ -399,16 +400,16 @@ html {
     // margin-top: 200px;
     .container {
       .row {
-        display: flex !important;
-        flex-direction: column-reverse !important;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      input.email {
+        width: 90%;
       }
     }
   }
 }
 @media (max-width: 600px) {
-  .section-two {
-    // margin-top: 150px;
-  }
   .footer .contacts .parent {
     display: block;
     .one .icons {
