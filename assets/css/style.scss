@@ -343,16 +343,17 @@ html {
   }
 }
 @media (max-width: 1000px) {
-  .header {
+  .header { 
     .row {
       display: block;
       .content {
         .parent {
+          position: relative;
           ul {
             width: 100%;
             height: auto;
             right: -100%;
-            position: fixed;
+            position: absolute;
             padding: 20px 0;
             transition: all 0.5s;
             background-color: white;
@@ -396,6 +397,9 @@ html {
   }
 }
 @media (max-width: 1025px) {
+  *{
+    font-size: 1.1rem;
+  }
   .section-two {
     // margin-top: 200px;
     .container {
@@ -404,10 +408,13 @@ html {
         flex-direction: column-reverse;
       }
       input.email {
-        width: 90%;
+        width: 80%;
       }
     }
   }
+}
+@media (max-width: 770px) {
+  
 }
 @media (max-width: 600px) {
   .footer .contacts .parent {

@@ -328,11 +328,14 @@ html {
   .header .row {
     display: block;
   }
+  .header .row .content .parent {
+    position: relative;
+  }
   .header .row .content .parent ul {
     width: 100%;
     height: auto;
     right: -100%;
-    position: fixed;
+    position: absolute;
     padding: 20px 0;
     transition: all 0.5s;
     background-color: white;
@@ -362,12 +365,15 @@ html {
   }
 }
 @media (max-width: 1025px) {
+  * {
+    font-size: 1.1rem;
+  }
   .section-two .container .row {
     display: flex;
     flex-direction: column-reverse;
   }
   .section-two .container input.email {
-    width: 90%;
+    width: 80%;
   }
 }
 @media (max-width: 600px) {

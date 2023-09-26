@@ -22,6 +22,10 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     "@0.00": {
       slidesPerView: 1,
@@ -48,6 +52,10 @@ var swiper = new Swiper(".mysecSwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     "@0.00": {
